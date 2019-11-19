@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="unidescApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/fontawesome.css">
+
+</head>
+
+<body ng-controller="camisetaController as vm">
+
+    <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/controllers.js"></script>
+
+    <header class="byano" ng-init="vm.init()">
+        <div class="byano-menor">
+            <!------------------------------------------------------------>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a style="color: black;" class="nav-link " href="http://localhost:8081">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: black;" class="nav-link" href="http://localhost:8081">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: black;" class="nav-link" href="http://localhost:8081">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: black;" class="nav-link" href="http://localhost:8081" tabindex="-1">Sobre</a>
+                </li>
+            </ul>
+            <!------------------------------------------------------------>
+
+        </div>
+    </header>
+    <form class="form1">
+        <label class="label1">Cadastro Produtos</label><br>
+        <label class="input1" for="">Nome do Produto</label>
+        <input class="input1" type="text" name="Nome" ng-model="vm.produto.nome"><br>
+        <label class="input1" for="">Valor do Produto</label>
+        <input class="input2" type="text" name="valor" ng-model="vm.produto.valor"><br>
+        <button id="btn" class="btn btn-primary" ng-click=" vm.adicionarProdutos()">Enviar</button>
+
+    </form>
+    <Div ng-show="vm.produtos.length > 0" class="tableform">
+        <Form class="form2">
+            <table class="table table-bordered ">
+                <!--<thead>
+                    <tr class="tr1">
+                        <th scope="col">Nome</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                    <tr ng-repeat="iten in vm.produtos track by $index">
+                        <th>{{iten.nome}}</th>
+                        <th>{{iten.valor}}</th>
+                        <th><i class="fas fa-highlighter" ng-click="vm.editarProduto($index)"></i> </th>
+                        <th> <i class="fas fa-trash" ng-click="vm.deletarProduto($index)"></i> </th>
+
+
+                    </tr>-->
+
+                <table id="playlistTable">
+                    <tr class="tr1">
+                        <th scope="col">Nome</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                    <tr ng-repeat="iten in vm.produtos track by $index">
+                        <th>{{iten.nome}}</th>
+                        <th>{{iten.preco}}</th>
+                        <th><i class="fas fa-highlighter" ng-click="vm.editarProduto($index)"></i> </th>
+                        <th> <i class="fas fa-trash" ng-click="vm.deletarProduto($index)"></i> </th>
+                    </tr>
+        </Form>
+    </Div>
+
+
+
+
+
+</body>
+
+</html>

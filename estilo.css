@@ -1,0 +1,162 @@
+.label-vm.message {
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+}
+
+.form-group {
+    height: 100px;
+    width: 200px;
+}
+
+.form1 {
+    text-align: center;
+    border: 2px solid #999;
+    height: 18em;
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.form2 {
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 100px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+body {
+    margin-left: 50px;
+    padding: auto;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+}
+html,
+body {
+    height: 100%;
+}
+.input1 {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#tablet {
+    text-align: center;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+.table table-bordered {
+    height: 200px;
+    width: 400px;
+    background-color: white;
+}
+.tableform {
+    width: 300px;
+    text-align: center;
+}
+.tr1 {
+    background-color: rgb(172, 165, 165);
+}
+.botao {
+    width: 150px;
+    font-size: 12px;
+    padding: 3px;
+}
+#btn {
+    margin-top: 26px;
+    color: #fff;
+    background-color: #343a40;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .75);
+}
+#btn:hover {
+    background-color: #007bff;
+}
+.byano {
+    margin: auto;
+    padding: auto;
+    background-color: rgb(34, 185, 185);
+    height: 61px;
+}
+.byano-menor {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(34, 185, 185);
+    height: 61px;
+}
+.lista {
+    list-style-type: none;
+    text-align: inline-block;
+}
+ul li {
+    display: inline;
+    line-height: 45px;
+    position: relative;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+body {
+    font: 75%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 25em;
+    border: 1px solid #666;
+}
+thead {
+    background: #ccc url(https://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+tr:hover {
+    background-color: #3d80df;
+    color: #fff;
+}
+thead tr:hover {
+    background-color: transparent;
+    color: inherit;
+}
+tr:nth-child(even) {
+    background-color: #edf5ff;
+}
+th {
+    font-weight: normal;
+    text-align: left;
+}
+th,
+td {
+    padding: 0.1em 1em;
+}
+.nav-item {
+    color: black !important;
+}
+header {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+}
+li a:hover {
+    background-color: #007bff;
+}
+.form1 label {
+    margin-top: 14px;
+}
+.input2 {
+    margin-left: 6px;
+    text-align: center;
+    border-radius: 5px;
+}
+.label1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+d
